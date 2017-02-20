@@ -1,0 +1,53 @@
+\chapter{2017 Events}
+
+UCC runs a lot of events. You should go to them! Dates and times may change. 
+
+% Event with title and date
+\newenvironment{event}[3]
+{
+	\begin{mdframed}[backgroundcolor=white,nobreak=true]
+		\color{black}{\section{#1}}
+		\begin{mdframed}[backgroundcolor=white]
+			When: #2
+			Where: #3
+		\end{mdframed}
+}{
+	\end{mdframed}
+}
+
+% Simpler (no boxes)
+\renewenvironment{event}[3]
+{
+	\section{#1}
+	\noindent {\bf When:} #2 \\
+	{\bf Where:} #3
+
+}{}
+
+\section{Semester 1}
+	
+	\begin{event}{Fresher Welcome @ 1700}{6 March}{UCC Clubroom}
+		This event is to welcome you, a new UCC member, to the club. There will be members new and old to talk to and get to know.
+	\end{event}
+	
+	\begin{event}{Intro to Programming}{Starting Wk3; Friday Weekly}{UCC Clubroom}
+		Ever wonder how computers work? Ever wanted to make a game or similar? Do you want to learn to program but not know how to start. We'll be teaching people from absolute beginners to those with a bit of skill everything you might want to know as we work towards building a basic game from scratch. We'll be using C++.
+	\end{event}
+	
+	\begin{event}{AGM}{14 March @ 1300}{Guild Council Meeting Room}
+		The meeting to elect the new committee for 2017. We have a position just for you, the Fresher representative. You should attend to either run or vote for the person who will represent you in the committee. If you don't know where it is, people will guide you from the clubroom.
+	\end{event}
+	\begin{event}{Quiz Night}{DATE}{University Tavern}
+		Bringing together the various clubs of Cameron Hall, the quiz night is the only proper time to use your smarts throughout your degree.  [18+ Event].
+	\end{event}
+	
+\section{Semester 2}
+	\begin{event}{Camp}{Midyear Break}{Lake Leschenaultia}
+		UCC goes camping, minus tents. During the winter break, UCC members travel up to the dormitory at Camp Leschenaultia for a weekend long LAN. There will be internet. [18+ Event]
+	\end{event}
+	\begin{event}{43rd Anniversary Dinner}{TBD}{TBA}
+		The 43rd anniversary of our club. For the celebration, a dinner will be held. Feel free to come along to meet some of the older members, as well to have a general chat with your fellow UCCans.
+	\end{event}
+	\begin{event}{Charity Vigil}{Semester 2 - Overnight}{Cameron Hall}
+		Once a year, all the clubs of Cameron Hall get together for a night of fun, games, and raising money for charity. The details of the night are still to come, but UCC traditionally hosts a LAN. There will be an entry fee for the event.
+	\end{event}
